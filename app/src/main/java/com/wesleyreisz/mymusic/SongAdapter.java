@@ -25,7 +25,7 @@ public class SongAdapter extends ArrayAdapter<Song>{
     public View getView(int position, View view, ViewGroup parent) {
         if(view==null){
             LayoutInflater inflater = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(R.layout.fragment_music_list_view,parent,false);
+            view = inflater.inflate(R.layout.list_view_contents,parent,false);
         }
         final Song song = mEntries.get(position);
 

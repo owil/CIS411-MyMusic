@@ -21,13 +21,11 @@ public class MyMusicActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_music);
 
-        ListView listView = (ListView) findViewById(R.id.listview_songs);
-        List<Song> songs = new MockMusicService().findAll();
-        SongAdapter songAdapter = new SongAdapter(this,R.layout.fragment_music_list_view, songs);
-        listView.setAdapter(songAdapter);
-
+        MusicListView mlvFragment = new MusicListView();
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.fragment_placeholder,mlvFragment,"MusicListView Fragment");
+        fragmentTransaction.commit();
     }
 
 
