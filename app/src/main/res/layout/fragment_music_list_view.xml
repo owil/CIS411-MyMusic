@@ -27,7 +27,8 @@
                 android:text="Artist"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/song_artist"/>
+                android:id="@+id/song_artist"
+                android:textStyle="italic"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -42,7 +43,8 @@
                 android:text="Album"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/song_album"/>
+                android:id="@+id/song_album"
+                android:textStyle="italic"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -57,7 +59,8 @@
                 android:text="Date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/song_date"/>
+                android:id="@+id/song_date"
+                android:textStyle="italic"/>
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>
