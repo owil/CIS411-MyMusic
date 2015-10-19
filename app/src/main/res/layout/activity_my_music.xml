@@ -9,8 +9,20 @@
     tools:context=".MyMusicActivity">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="@string/main_title"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textview_title"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_songs"
+        android:layout_below="@id/textview_title"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+    </ListView>
+
 
 </RelativeLayout>

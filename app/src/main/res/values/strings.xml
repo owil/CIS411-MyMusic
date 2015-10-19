@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">My Music</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="main_title">Music List View</string>
     <string name="action_settings">Settings</string>
 
 </resources>
