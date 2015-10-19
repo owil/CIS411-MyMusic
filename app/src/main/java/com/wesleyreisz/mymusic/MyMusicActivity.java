@@ -23,7 +23,8 @@ public class MyMusicActivity extends Activity {
 
         ListView listView = (ListView) findViewById(R.id.listview_songs);
         List<Song> songs = new MockMusicService().findAll();
-        SongAdapter songAdapter = new SongAdapter();
+        SongAdapter songAdapter = new SongAdapter(this,R.layout.fragment_music_list_view, songs);
+        listView.setAdapter(songAdapter);
 
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
